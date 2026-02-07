@@ -8,7 +8,8 @@ let result=str.slice(i,i+size);
 		arr.push(result);
 			i=i+size;
 		}
-	arr.push(str.slice(i));
+	if(i<str.length){
+	arr.push(str.slice(i));}
 	console.log(arr);
 // Do not change the code below
 const str = prompt("Enter String.");
